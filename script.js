@@ -27,11 +27,11 @@ fetchPlayerData();
 
 // Sample team data with banner image URLs (replace with your actual data)
 const teamData = {
-    "Team A": { banner: "images/Picture1.png", size: { width: 320, height: 160 } },
-    "Team B": { banner: "images/Picture1.png", size: { width: 320, height: 160 } },
-    "Team C": { banner: "images/Picture1.png", size: { width: 320, height: 160 } },
-    "Team D": { banner: "images/Picture1.png", size: { width: 320, height: 160 } },
-    "Team E": { banner: "images/Picture1.png", size: { width: 320, height: 160 } }
+    "Team A": { banner: "images/TeamA.png", size: { width: 320, height: 210 }, teamlist:  "https://bosch-my.sharepoint.com/:x:/r/personal/ure4kor_bosch_com/Documents/Events_2024/Auction/TeamA.xlsx?d=wf7b1952d3581474ca18788c82946795f&csf=1&web=1&e=LIErRA"},
+    "Team B": { banner: "images/TeamB.png", size: { width: 320, height: 210 }, teamlist:  "https://bosch-my.sharepoint.com/:x:/r/personal/ure4kor_bosch_com/Documents/Events_2024/Auction/TeamB.xlsx?d=w0af58936b6844c25ac86dc46f7364348&csf=1&web=1&e=NGhgfR"},
+    "Team C": { banner: "images/TeamC.png", size: { width: 320, height: 210 }, teamlist:  "https://bosch-my.sharepoint.com/:x:/r/personal/ure4kor_bosch_com/Documents/Events_2024/Auction/TeamC.xlsx?d=w46d1b173466a449693df02e64cf8967d&csf=1&web=1&e=wz8lop"},
+    "Team D": { banner: "images/TeamD.png", size: { width: 320, height: 210 }, teamlist:  "https://bosch-my.sharepoint.com/:x:/r/personal/ure4kor_bosch_com/Documents/Events_2024/Auction/TeamD.xlsx?d=w8d020217e5d54fc4a9b5ab0f1dcf12b5&csf=1&web=1&e=zuG2P5"},
+    "Team E": { banner: "images/TeamE.png", size: { width: 320, height: 210 }, teamlist:  "https://bosch-my.sharepoint.com/:x:/r/personal/ure4kor_bosch_com/Documents/Events_2024/Auction/TeamE.xlsx?d=w1d879518495c49b2812515cc8cefd913&csf=1&web=1&e=ZxvU97"}
     // Add more teams as needed
 };
 
@@ -90,9 +90,8 @@ function lookupTeam() {
 
         // Display the team banner with a specific size and name
         teamDisplay.innerHTML = `
-            <h2>${teamName}</h2>
             <img src="${teamInfo.banner}" alt="${teamName} Banner" width="${teamInfo.size.width}" height="${teamInfo.size.height}">
-            <p>Welcome, ${matchedPlayers[0]}! You belong to ${teamName}.</p>
+            <p>Welcome, ${matchedPlayers[0]}! You belong to <a href=${teamInfo.teamlist}>${teamName}.</a></p>
         `;
     } else {
         // Display an error message
