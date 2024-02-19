@@ -31,8 +31,8 @@ const teamData = {
     "Team B": { banner: "images/TeamB.png", size: { width: 320, height: 210 }, teamlist:  "https://bosch-my.sharepoint.com/:x:/r/personal/ure4kor_bosch_com/Documents/Events_2024/Auction/TeamB.xlsx?d=w0af58936b6844c25ac86dc46f7364348&csf=1&web=1&e=NGhgfR"},
     "Team C": { banner: "images/TeamC.png", size: { width: 320, height: 210 }, teamlist:  "https://bosch-my.sharepoint.com/:x:/r/personal/ure4kor_bosch_com/Documents/Events_2024/Auction/TeamC.xlsx?d=w46d1b173466a449693df02e64cf8967d&csf=1&web=1&e=wz8lop"},
     "Team D": { banner: "images/TeamD.png", size: { width: 320, height: 210 }, teamlist:  "https://bosch-my.sharepoint.com/:x:/r/personal/ure4kor_bosch_com/Documents/Events_2024/Auction/TeamD.xlsx?d=w8d020217e5d54fc4a9b5ab0f1dcf12b5&csf=1&web=1&e=zuG2P5"},
-    "Team E": { banner: "images/TeamE.png", size: { width: 320, height: 210 }, teamlist:  "https://bosch-my.sharepoint.com/:x:/r/personal/ure4kor_bosch_com/Documents/Events_2024/Auction/TeamE.xlsx?d=w1d879518495c49b2812515cc8cefd913&csf=1&web=1&e=ZxvU97"}
-    // Add more teams as needed
+    "Team E": { banner: "images/TeamE.png", size: { width: 320, height: 210 }, teamlist:  "https://bosch-my.sharepoint.com/:x:/r/personal/ure4kor_bosch_com/Documents/Events_2024/Auction/TeamE.xlsx?d=w1d879518495c49b2812515cc8cefd913&csf=1&web=1&e=ZxvU97"},
+    "Team FUNch": { banner: "images/FUNch_Logo.jpg", size: {width: 200, height: 200}}
 };
 
 /*
@@ -80,7 +80,6 @@ function lookupTeam() {
     const matchedPlayers = Object.keys(playerData).filter(player =>
         player.toLowerCase().includes(playerNameInput)
     );
-
     if (matchedPlayers.length > 0) {
         // For simplicity, using the first matched player's team information
         const teamName = playerData[matchedPlayers[0]];
@@ -95,7 +94,9 @@ function lookupTeam() {
         `;
     } else {
         // Display an error message
-        teamDisplay.innerHTML = `<p>Hold tight! You are still in the running to be picked by a team</p>`;
+        teamDisplay.innerHTML = `
+        <img src="images/404-error.png" alt="404 Banner" width="100" height="100">
+        <p>Ooops, you're missed! Please reach back to us.</p>`;
     }
 }
 
