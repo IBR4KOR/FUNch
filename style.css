@@ -37,6 +37,20 @@ nav {
     margin: 0;
 }
 
+.centered-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-section .image-container {
+    display: flex;
+}
+
+.centered-section .image-container img {
+    margin-right: 24px; /* Adjust the margin as needed for spacing */
+}
+
 nav a {
     color: #fff;
     text-decoration: none;

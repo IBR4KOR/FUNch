@@ -24,17 +24,21 @@
     <section id="image-carousel" class="carousel">
         <script src="script.js"></script>
         <div class="carousel-inner">
-            <img src="images/3.png" alt="Image 3", class="image-animation">
-            <img src="images/auction.png" alt="Auction image" class="image-animation">
-            <img src="images/Picture2.png" alt="events coming soon" class="image-animation">
+            <img src="images/BanFunchyhour.png" alt="Image 3", class="image-animation">
+            <img src="images/CobFunchyHour.png" alt="Image 3", class="image-animation">
+            <img src="images/IMG_3784.JPG" alt="Auction image" class="image-animation">
+            <img src="images/Cricket_league.png" alt="events coming soon" class="image-animation">
             </div>
     </section>
 
-    <section id="team-search" class="team-search">
-        <p style="font-size: 36px;font-weight: bold; color: #404040;">Discover your Tribe!🌐✨</p>
-        <input type="text" id="playerNameInput" placeholder="Type your name here">
-        <button style="border-radius: 8px; font-size: 12px; width: 116px;" onclick="lookupTeam()">Lookup Team</button>
-        <p id="teamDisplay"></p>
+    <section id="flags" class="centered-section">
+        <div class="image-container" style="margin-top: 48px;">
+        <img src="images/CodeRed.png" alt="Image 1" width="240" height="163.4">
+        <img src="images/MightyMavericks.png" alt="Image 2" width="240" height="163.4">
+        <img src="images/CosmicCrusaders.png" alt="Image 3" width="240" height="163.4">
+        <img src="images/Kalashnikov.png" alt="Image 4" width="240" height="163.4">
+        <img src="images/WolfPack.png" alt="Image 5" width="240" height="163.4">
+    </div>
     </section>
 
     <section id="points-table" class="table-container">
@@ -43,16 +47,16 @@
             <thead>
                 <tr>
                     <th></th>
-                    <th style="color: #D3145A; font-weight: bold;">Team A</th>
-                    <th style="color: #8AC73E; font-weight: bold;">Team B</th>
-                    <th style="color: #28ACE4; font-weight: bold;">Team C</th>
-                    <th style="color: #E7252E; font-weight: bold;">Team D</th>
-                    <th style="color: #FCB422; font-weight: bold;">Team E</th>
+                    <th style="color: #D3145A; font-weight: bold;">Code Red</th>
+                    <th style="color: #8AC73E; font-weight: bold;">Mighty Mavericks</th>
+                    <th style="color: #28ACE4; font-weight: bold;">Cosmic Crusaders</th>
+                    <th style="color: #E7252E; font-weight: bold;">Kalashnikov</th>
+                    <th style="color: #FCB422; font-weight: bold;">The Wolf Pack</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td style="font-weight: bold;">February</td>
+                    <td style="font-weight: bold;">March</td>
                     <td>0</td>
                     <td>0</td>
                     <td>0</td>
@@ -60,12 +64,20 @@
                     <td>0</td>
                 </tr>
                 <tr>
+                    <td style="font-weight: bold;">February</td>
+                    <td>525</td>
+                    <td>375</td>
+                    <td>200</td>
+                    <td>100</td>
+                    <td>700</td>
+                </tr>
+                <tr>
                     <td style="font-weight: bold;">Total Credits</td>
-                    <td>4000</td>
-                    <td>4000</td>
-                    <td>4000</td>
-                    <td>4000</td>
-                    <td>4000</td>
+                    <td>4525</td>
+                    <td>4375</td>
+                    <td>4200</td>
+                    <td>4100</td>
+                    <td>4700</td>
                 </tr>
                 </tbody>
         </table>
@@ -84,19 +96,24 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Feb 12 - 16</td>
-                    <td>Team Draft</td>
+                    <td>Mar</td>
+                    <td>FUNch Cricket League 2024</td>
                     <td>All Teams</td>
                     <td>Nil</td>
+                </tr>
+                <tr>
+                    <td>Feb 28</td>
+                    <td>FUNchy Hour</td>
+                    <td>All Teams</td>
+                    <td><button onclick="location.href='https://bosch-my.sharepoint.com/:x:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/Feb_FUNchyHour.xlsx?d=w53a25ca231b5480ea1295f7de3ae4c23&csf=1&web=1&e=dmFEzA'" type="button">Click Here</button></td>
                     <!--<td><a href="#">Link</a></td>-->
                 </tr>
                 <tr>
-                    <td>Feb 19 - 23</td>
-                    <td>FUNchy Opening</td>
+                    <td>Feb 15 - 16</td>
+                    <td>Team Draft</td>
                     <td>All Teams</td>
-                    <td>Nil</td>
+                    <td><button onclick="location.href='https://bosch-my.sharepoint.com/:x:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/Feb_Draft.xlsx?d=w8e5315b2541340e591f996b69305a1ed&csf=1&web=1&e=naATaU'" type="button">Click Here</button></td>
                     <!--<td><a href="#">Link</a></td>-->
-                </tr>
                 </tr>
             </tbody>
         </table>
@@ -113,21 +130,5 @@
     <footer style="padding: 20px;">
         <p>&copy; 2024 FUNch. All rights reserved.</p>
     </footer>
-
-    <script>
-        // Add your JavaScript code here, including script.js content
-        // Add event listeners to "Details" buttons and toggle hidden details
-
-        const detailsButtons = document.querySelectorAll("#points-table tbody tr td:last-child button");
-        detailsButtons.forEach(button => {
-            button.addEventListener("click", toggleDetails);
-        });
-
-        function toggleDetails(event) {
-            const row = event.target.parentElement.parentElement;
-            const detailsElement = row.querySelector(".details");
-            detailsElement.classList.toggle("hidden");
-        }
-    </script>
 </body>
 </html>
