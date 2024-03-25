@@ -65,6 +65,10 @@ function translateSlides() {
 // Set slide transition duration to 3 seconds (adjust as needed)
 //carouselInner.style.transitionDuration = '4s';
 
+function openLink(url) {
+    window.open(url, '_blank');
+}
+
 
 function lookupTeam() {
     const playerNameInput = document.getElementById("playerNameInput").value.trim().toLowerCase();
