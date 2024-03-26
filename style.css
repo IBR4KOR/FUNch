@@ -173,7 +173,7 @@ button {
     font-size: 16px;
     background: #f45242;
     transition: background 0.5s ease-in-out;
-    border-radius: 16px;
+    border-radius: 12px;
     cursor: pointer;
   }
   
