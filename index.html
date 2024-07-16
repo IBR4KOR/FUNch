@@ -25,13 +25,14 @@
     <section id="image-carousel" class="carousel">
         <script src="script.js"></script>
         <div class="carousel-inner">
-            <img src="images/EthnicDay_BAN.png" alt="Cricket" class="image-animation">
-            <img src="images/EthnicDay_Cob_Hyd.png" alt="Cricket" class="image-animation">
+            <img src="images/Artsy_Hour_Event.png" alt="Artsy" class="image-animation">
+            <img src="images/Painting_Artsy.png" alt="Artsy" class="image-animation">
+            <img src="images/PaperCollage_ArtSy.png" alt="Artsy" class="image-animation">
             </div>
     </section>
 
     <section id="flags" class="centered-section">
-        <div class="image-container" style="margin-top: 48px;">
+        <div class="gallery" style="margin-top: 48px;">
         <img src="images/CodeRed.png" style="cursor: pointer;" onclick="openLink('https://bosch-my.sharepoint.com/:x:/r/personal/ure4kor_bosch_com/Documents/Events_2024/Auction/TeamA.xlsx?d=wf7b1952d3581474ca18788c82946795f&csf=1&web=1&e=fabsqe')" alt="Image 1" width="240" height="163.4">
         <img src="images/MightyMavericks.png" style="cursor: pointer;" onclick="openLink('https://bosch-my.sharepoint.com/:x:/r/personal/ure4kor_bosch_com/Documents/Events_2024/Auction/TeamB.xlsx?d=w0af58936b6844c25ac86dc46f7364348&csf=1&web=1&e=XoZCES')"  alt="Image 2" width="240" height="163.4">
         <img src="images/CosmicCrusaders.png" style="cursor: pointer;" onclick="openLink('https://bosch-my.sharepoint.com/:x:/r/personal/ure4kor_bosch_com/Documents/Events_2024/Auction/TeamC.xlsx?d=w46d1b173466a449693df02e64cf8967d&csf=1&web=1&e=Zgqzfa')" alt="Image 3" width="240" height="163.4">
@@ -40,6 +41,7 @@
     </div>
     </section id="">
 
+    <!--
     <section id="appreciation-wall" class="carousel">
         <h2 style="text-align: center; margin-top: 48px;">Our Appreciation Wall</h2>
         <div class="image-container" style="margin-left: 48px; margin-right: 48px; text-align: center; margin-bottom: 48px;">
@@ -47,10 +49,25 @@
             <img src="images/appreciation_bv.png" height="300" width="" style="margin: 24px;">
         </div>
     </section>
+    -->
 
-    <section id="points-table" class="table-container">
+    <section id="talent_show" class="talent-show-section">
+            <h2 style="margin-top: 4px;">🌟 FUNch Online Talent Show 2024 🌟</h2>
+            <h3>Top Memes</h3>
+            <div class="gallery" id="gallery">
+                <img src="https://picsum.photos/id/1015/150/150" alt="Image 1">
+                <img src="https://picsum.photos/id/1016/150/150" alt="Image 2">
+                <img src="https://picsum.photos/id/1018/150/150" alt="Image 3">
+                <img src="https://picsum.photos/id/1020/150/150" alt="Image 4">
+                <img src="https://picsum.photos/id/1021/150/150" alt="Image 5">
+            </div>
+            <button class="glow-on-hover" style="width: 220px; height: 50px; font-weight:bold;" onclick="openLink('')" type="button">Showcase Your Talent</button>
+        </div>
+    </section>
+
+    <section id="points-table-sect" class="table-container">
         <h2>Points Table</h2>
-        <table>
+        <table id="points-table">
             <thead>
                 <tr>
                     <th></th>
@@ -63,7 +80,23 @@
             </thead>
             <tbody>
                 <tr>
-                    <td style="font-weight: bold;">May HACK</td>
+                    <td style="font-weight: bold;">June Paint</td>
+                    <td>800</td>
+                    <td>100</td>
+                    <td>600</td>
+                    <td>400</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">June Paper Collage</td>
+                    <td>800</td>
+                    <td>400</td>
+                    <td>1000</td>
+                    <td>100</td>
+                    <td>600</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">May Hackathon</td>
                     <td>400</td>
                     <td>No Participation</td>
                     <td>100</td>
@@ -71,7 +104,7 @@
                     <td>1000</td>
                 </tr>
                 <tr>
-                    <td style="font-weight: bold;">May ETHN</td>
+                    <td style="font-weight: bold;">May Ethnic</td>
                     <td>450</td>
                     <td>350</td>
                     <td>250</td>
@@ -112,11 +145,11 @@
                 </tr>
                 <tr>
                     <td style="font-weight: bold; cursor: pointer;" sty onclick="openLink('https://bosch-my.sharepoint.com/:x:/r/personal/ure4kor_bosch_com/Documents/Events_2024/Events_Score_2024.xlsx?d=w1f450de9216b406b8a76a625060b5a18&csf=1&web=1&e=WhPD7B')">Total Credits</td>
-                    <td>6795</td>
-                    <td>4110</td>
-                    <td>6000</td>
-                    <td>6550</td>
-                    <td>6510</td>
+                    <td class="glow-on-hover-gold">8395</td>
+                    <td>4610</td>
+                    <td class="glow-on-hover-bronze">7600</td>
+                    <td>7050</td>
+                    <td class="glow-on-hover-silver">8110</td>
                 </tr>
                 </tbody>
         </table>
@@ -141,7 +174,7 @@
                     <td>All Teams</td>
                     <td>
                         <button style="border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/Invite_GIF/Auction_Plan.png?csf=1&web=1&e=TK9yfA')" type="button">Invites</button>
-                        <button style="margin-left: 8px; background: #9E2896; border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/Team_Draft.png?csf=1&web=1&e=wpBfCF')" type="button">Event Snaps</button>
+                        <button class="glow-on-hover" style="margin-left: 8px; background: #9E2896; border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/Team_Draft.png?csf=1&web=1&e=wpBfCF')" type="button">Event Snaps</button>
                     </td>
                 </tr>
                 <tr>
@@ -150,7 +183,7 @@
                     <td>All Teams</td>
                     <td>
                         <button style="border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/Invite_GIF/InviteFeb.gif?csf=1&web=1&e=HW0VbB')" type="button">Invites</button>
-                        <button style="margin-left: 8px; background: #9E2896; border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/Feb_FunchyHour_Photos.png?csf=1&web=1&e=aHtZY3')" type="button">Event Snaps</button>
+                        <button class="glow-on-hover" style="margin-left: 8px; background: #9E2896; border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/Feb_FunchyHour_Photos.png?csf=1&web=1&e=aHtZY3')" type="button">Event Snaps</button>
                     </td>
                 </tr>
                 <tr>
@@ -159,12 +192,13 @@
                     <td>All Teams</td>
                     <td>
                         <button style="border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/Invite_GIF/InviteMar1.gif?csf=1&web=1&e=SMOS6m')" type="button">Invites</button>
-                        <button style="margin-left: 8px; background: #9E2896; border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/Cricket_2024.png?csf=1&web=1&e=zKyK0D')" type="button">Event Snaps</button>
+                        <button class="glow-on-hover" style="margin-left: 8px; background: #9E2896; border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/Cricket_2024.png?csf=1&web=1&e=zKyK0D')" type="button">Event Snaps</button>
                     </td>
                 </tr>
                 <tr style="background-color:lightgoldenrodyellow; border: #ffffff;">
                     <td style="border: #ffffff;"></td>
-                    <td style="border: #ffffff;"><button style="margin-left: 8px; background: #9E2896; border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/DeptMeet_Q1.png?csf=1&web=1&e=Idceeh')" type="button">Department Meeting Q1 Snaps</button></td>
+                    <td style="border: #ffffff;">
+                        <button class="glow-on-hover" style="margin-left: 8px; background: #9E2896; border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/DeptMeet_Q1.png?csf=1&web=1&e=Idceeh')" type="button">Department Meeting Q1 Snaps</button></td>
                     <td style="border: #ffffff;"></td>
                     <td style="border: #ffffff;"></td>
                 </tr>
@@ -174,7 +208,7 @@
                     <td>All Teams</td>
                     <td>
                         <button style="border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/Invite_GIF/InviteApril.gif?csf=1&web=1&e=mgeVPl')" type="button">Invites</button>
-                        <button style="margin-left: 8px; background: #9E2896; border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/Micromaze.png?csf=1&web=1&e=48aC98')" type="button">Event Snaps</button>
+                        <button class="glow-on-hover" style="margin-left: 8px; background: #9E2896; border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/Micromaze.png?csf=1&web=1&e=48aC98')" type="button">Event Snaps</button>
                     </td>
                 </tr>
                 <tr>
@@ -183,8 +217,8 @@
                     <td>All Teams</td>
                     <td>
                         <button style="border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/Invite_GIF/InviteMay2.gif?csf=1&web=1&e=OzPg9Y')" type="button">Invites</button>
-                        <button style="margin-left: 8px; background: #9E2896; border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/EthnicDay_BAN.png?csf=1&web=1&e=5w4Rvc')" type="button">Event Snaps Ban</button>
-                        <button style="margin-left: 8px; background: #9E2896; border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/EthnicDay_Cob_Hyd.png?csf=1&web=1&e=Mhom5M')" type="button">Event Snaps Cob/Hyd</button>
+                        <button class="glow-on-hover" style="margin-left: 8px; background: #9E2896; border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/EthnicDay_BAN.png?csf=1&web=1&e=5w4Rvc')" type="button">Event Snaps Ban</button>
+                        <button class="glow-on-hover" style="margin-left: 8px; background: #9E2896; border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/EthnicDay_Cob_Hyd.png?csf=1&web=1&e=Mhom5M')" type="button">Event Snaps Cob/Hyd</button>
                     </td>
                 </tr>
                 <tr>
@@ -199,11 +233,17 @@
                     <td>Jun</td>
                     <td>Artsy Hour</td>
                     <td>All Teams</td>
-                    <td>Nil</td>
+                    <td>
+                            <button style="border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/Invite_GIF/InviteJune.gif?csf=1&web=1&e=SKraxZ')" type="button">Invites</button>
+                            <button class="glow-on-hover" style="margin-left: 8px; background: #9E2896; border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/Artsy_Hour_Event.png?csf=1&web=1&e=DTctHW')" type="button">Event Snaps</button>
+                            <button class="glow-on-hover" style="margin-left: 8px; background: #9E2896; border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/Painting_Artsy.png?csf=1&web=1&e=Tbrbyz')" type="button">Paintings</button>
+                            <button class="glow-on-hover" style="margin-left: 8px; background: #9E2896; border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/PaperCollage_ArtSy.png?csf=1&web=1&e=uHb0Sq')" type="button">Collage</button>
+                    </td>
                 </tr>
                 <tr style="background-color:lightgoldenrodyellow; border: #ffffff;">
                     <td style="border: #ffffff;"></td>
-                    <td style="border: #ffffff; text-align: center; font-weight: bold;">Department Meeting Q2</td>
+                    <td style="border: #ffffff;">
+                        <button class="glow-on-hover" style="margin-left: 8px; background: #9E2896; border-radius: 4px;" onclick="openLink('https://bosch-my.sharepoint.com/:i:/r/personal/ure4kor_bosch_com/Documents/Events_2024/EventsArchive/DeptMeet_Q1.png?csf=1&web=1&e=Idceeh')" type="button">Department Meeting Q2 Snaps</button></td>
                     <td style="border: #ffffff;"></td>
                     <td style="border: #ffffff;"></td>
                 </tr>
