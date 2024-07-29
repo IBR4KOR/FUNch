@@ -135,7 +135,7 @@ Button Hover
 
 .talent-show-section {
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px 20px 20px;  /* Reduced bottom padding */
     background: linear-gradient(135deg, #f76c6c, #6e54a3); /* Vibrant gradient background */
     color: white;
     border-radius: 10px;
@@ -143,6 +143,7 @@ Button Hover
     width: 95%;  /* Adjusted width */
     margin: 40px auto;  /* Top and bottom margins (auto for center alignment) */
 }
+
 
 
 nav a {
@@ -479,4 +480,30 @@ Silver
     left: 0;
     top: 0;
 }
+
+.no-underline {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.separator hr {
+    flex: 1;
+    border: none;
+    height: 1px; /* Adjust thickness as needed */
+    background: linear-gradient(135deg, #8a8a8a, #dfd1d1); /* Gradient color */
+    margin: 0; /* Remove default margin */
+}
+
+.separator span {
+    margin: 0 15px; /* Adjust spacing around the text */
+    white-space: nowrap;
+}
+
+
 
