@@ -496,7 +496,7 @@ Silver
     flex: 1;
     border: none;
     height: 1px; /* Adjust thickness as needed */
-    background: linear-gradient(135deg, #8a8a8a, #dfd1d1); /* Gradient color */
+    background: linear-gradient(135deg, #8a8a8a, #545454); /* Gradient color */
     margin: 0; /* Remove default margin */
 }
 
