@@ -177,6 +177,12 @@ nav a:hover {
     overflow: hidden;
     position: relative; /* For navigation buttons */
 }
+.carousel-Winner {
+    width: 100%;
+    height: 45vh;
+    overflow: hidden;
+    position: relative; /* For navigation buttons */
+}
 
 .carousel-inner {
     display: flex;
@@ -253,7 +259,7 @@ th {
 }
 
 #points-table tr:nth-child(9){
-    background: #ccffcc; /* light green */
+   /* background: #ccffcc;  light green */
     color: #000;
 
 }
